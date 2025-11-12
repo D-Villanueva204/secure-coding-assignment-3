@@ -19,3 +19,5 @@ jobs:
           persist-credentials: false
       - name: HCL AppScan CodeSweep
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@v2.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
